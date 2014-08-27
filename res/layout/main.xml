@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gharseldin.taskorganizer.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgournd"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Welcome!"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/quote_of_the_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:padding="30dp"
+            android:text="Don't judge each day by the harvest you reap but by the seeds that you plant."
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/test_textfield"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:typeface="sans" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/test_textfield"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/testbutton"
+                android:gravity="center"
+                android:onClick="logIn"
+                android:padding="15dp"
+                android:text="Log In"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/forgot_passowrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="@string/forgot_password"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="signUp"
+            android:padding="10dp"
+            android:text="@string/new_user"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</ScrollView>

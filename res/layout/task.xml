@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/testoutline" />
+
+    <ImageView
+        android:id="@+id/task_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@null"
+        android:src="@drawable/placeholder2" />
+
+    <CheckBox
+        android:id="@+id/task_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/checkbox"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/delete_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/task_image"
+        android:layout_alignLeft="@id/task_check"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/task_check"
+        android:src="@drawable/deletewhite" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/task_check"
+        android:maxLines="2"
+        android:text="The Task Description is the following etc. etc. etc."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/due"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/task_image"
+        android:text="Due"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/due"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/task_image"
+        android:text="5/30/2012"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
